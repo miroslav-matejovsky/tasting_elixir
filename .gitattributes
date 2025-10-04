@@ -1,0 +1,25 @@
+# Treat all text files as UTF-8 and normalize line endings
+*.ex   text eol=lf
+*.exs  text eol=lf
+*.erl  text eol=lf
+*.md   text eol=lf
+*.json text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.html text eol=lf
+*.css  text eol=lf
+*.js   text eol=lf
+*.ts   text eol=lf
+
+# Ignore compiled files
+*.beam binary
+
+# Images and other binaries
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.svg  text
+
+# Prevent merge conflicts in lock files
+mix.lock merge=union
