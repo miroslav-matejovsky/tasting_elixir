@@ -1,6 +1,6 @@
-defmodule FirstDraught do
+defmodule GrowingSenses do
   @moduledoc """
-  Documentation for `FirstDraught`.
+  Documentation for `GrowingSenses`.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule FirstDraught do
 
   ## Examples
 
-      iex> FirstDraught.hello()
+      iex> GrowingSenses.hello()
       :world
 
   """
