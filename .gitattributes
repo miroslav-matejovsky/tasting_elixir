@@ -11,6 +11,9 @@
 *.js   text eol=lf
 *.ts   text eol=lf
 
+.gitignore     text eol=lf
+.gitattributes text eol=lf
+
 # Ignore compiled files
 *.beam binary
 
