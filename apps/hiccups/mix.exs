@@ -1,9 +1,9 @@
-defmodule GrowingSenses.MixProject do
+defmodule Hiccups.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :growing_senses,
+      app: :hiccups,
       version: "0.1.0",
       build_path: "../../_build",
       config_path: "../../config/config.exs",
@@ -18,7 +18,6 @@ defmodule GrowingSenses.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      mod: {GrowingSenses.Application, []},
       extra_applications: [:logger]
     ]
   end
