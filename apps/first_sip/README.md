@@ -10,6 +10,7 @@ iex.bat -S mix
 Then you can try commands like:
 
 ```elixir
+FirstSip.taste()
 Application.loaded_applications()
 Application.spec(:elixir)
 :code.all_available()
