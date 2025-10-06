@@ -1,3 +1,18 @@
+defmodule GrowingSenses do
+
+  @doc "Start the logging process"
+  def start_logging, do: GrowingSenses.Logger.start_link([])
+
+  @doc "Stop the logging process"
+  def stop_logging, do: GrowingSenses.Logger.stop()
+
+  @doc "Reset the counter"
+  def reset_counter, do: GrowingSenses.Logger.reset_counter()
+
+  @doc "Change the log message"
+  def change_message(msg), do: GrowingSenses.Logger.change_message(msg)
+end
+
 defmodule GrowingSenses.Logger do
   @moduledoc """
   A GenServer that periodically logs info with a counter.
@@ -8,6 +23,10 @@ defmodule GrowingSenses.Logger do
 
   def start_link(opts) do
     GenServer.start_link(__MODULE__, opts, name: __MODULE__)
+  end
+
+  def stop do
+    GenServer.stop(__MODULE__)
   end
 
   @doc """

@@ -18,7 +18,7 @@ defmodule GrowingSenses.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      mod: {GrowingSenses.Application, []},
+      # mod: {GrowingSenses.Application, []},
       extra_applications: [:logger]
     ]
   end

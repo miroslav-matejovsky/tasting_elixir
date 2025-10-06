@@ -1,21 +1,14 @@
 # GrowingSenses
 
-**TODO: Add description**
+Start application with
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `growing_senses` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:growing_senses, "~> 0.1.0"}
-  ]
-end
+```powershell
+iex.bat -S mix
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/growing_senses>.
+Then in the `iex` shell, start the logger:
 
+```elixir
+GrowingSenses.reset_counter()
+GrowingSenses.change_message("Custom log message")
+```
